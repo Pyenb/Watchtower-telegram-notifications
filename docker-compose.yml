@@ -1,0 +1,14 @@
+version: "3"
+services:
+  watchtower:
+    image: containrrr/watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/hoster/watchtower/config.json:/config.json # optional. Used to log into a private registry
+      - /etc/localtime:/etc/localtime:ro # optional. Used to sync time with host
+    command: container1 container2 container3 # optional. Only watch specific containers
+    environment:
+      - WATCHTOWER_NOTIFICATIONS=shoutrrr
+      - WATCHTOWER_NOTIFICATION_URL=telegram://HTTP_API_TOKEN@telegram/?channels=CHAT_ID
+      - WATCHTOWER_CLEANUP=true # optional. Remove old images after updating
