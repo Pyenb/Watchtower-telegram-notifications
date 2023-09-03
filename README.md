@@ -1,6 +1,6 @@
 # Watchtower telegram notifications
 
-This repo is just a simple writeup on how to get telegram notifications from Watchtower, when a container is updated. This version is mostly focused on docker-compose, but should also work with docker run.
+This repo is just a simple write-up on how to get telegram notifications from Watchtower, when a container is updated. This version is mostly focused on docker-compose, but should also work with docker run.
 
 ## Contents
 
@@ -11,7 +11,7 @@ This repo is just a simple writeup on how to get telegram notifications from Wat
 
 ## Installation
 
-This chapter will quickly guide you through the setup process.
+It's pretty easy to get telegram notifications from Watchtower. You just need to follow these steps:
 
 ### 1. Telegram Bot
 
