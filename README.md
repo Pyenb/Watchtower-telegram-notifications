@@ -32,7 +32,7 @@ Now we need to setup Watchtower. For that, you need to add the following environ
 ```yaml
 environment:
     - WATCHTOWER_NOTIFICATIONS=shoutrrr
-    - WATCHTOWER_NOTIFICATION_URL=telegram://HTTP_API_TOKEN@telegram/?channels=CHAT_ID
+    - WATCHTOWER_NOTIFICATION_URL=telegram://HTTP_API_TOKEN@telegram?chats=CHAT_ID
 ```
 
 Replace `HTTP_API_TOKEN` with the token you got from BotFather in step 1. and `CHAT_ID` with the chat id you got from `@get_id_bot` in step 2.
